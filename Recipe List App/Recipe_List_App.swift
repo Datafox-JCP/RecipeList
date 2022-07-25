@@ -2,7 +2,7 @@
 //  Recipe_List_App.swift
 //  Recipe List App
 //
-//  Created by Juan Hernandez Pazos on 21/07/22.
+//  Created by Juan Carlos Pazos on 21/07/22.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct Recipe_List_App: App {
     var body: some Scene {
         WindowGroup {
-            RecipeListView()
+            RecipeTabView()
         }
     }
 }
