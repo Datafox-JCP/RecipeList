@@ -2,7 +2,7 @@
 //  RecipeTabView.swift
 //  Recipe List App
 //
-//  Created by Juan Hernandez Pazos on 25/07/22.
+//  Created by Juan Carlos Pazos on 25/07/22.
 //
 
 import SwiftUI
