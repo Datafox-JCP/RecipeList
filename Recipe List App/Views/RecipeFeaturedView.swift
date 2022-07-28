@@ -23,7 +23,7 @@ struct RecipeFeaturedView: View {
             GeometryReader { geo in
                 TabView {
                     // Loop through each recipe
-                    ForEach(0..<model.recipes.count) { index in
+                    ForEach(0..<model.recipes.count, id: \.self) { index in
                         // Only shows those that should be featured
                         if model.recipes[index].featured {
                             // Recipe card
@@ -70,3 +70,15 @@ struct RecipeFeaturedView_Previews: PreviewProvider {
             .environmentObject(RecipeModel())
     }
 }
+
+/*
+ Line 28:
+ ForEach(0..<model.recipes.count) { index in
+ Throws the warning: Non-constant range: argument must be an integer literal
+
+ It can be fixed by adding id: \.self so that the code is now
+
+Why id: \.self appears to be necessary now or was the previous code dead wrong in the first place?
+ 
+ When you use a range in a ForEach like that, it is read initially and never updated, so if you add/remove items from your array (model.recipes in this case), you can run into an index out of range error that will crash your app.
+ */
