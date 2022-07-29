@@ -69,8 +69,8 @@
 		C6239FEF288A381D00DC0209 /* Recipe List App */ = {
 			isa = PBXGroup;
 			children = (
-				C6826E7A2892B8730008758E /* Utils */,
 				C6239FF0288A381D00DC0209 /* Recipe_List_App.swift */,
+				C6826E7A2892B8730008758E /* Utils */,
 				C623A001288A389600DC0209 /* Services */,
 				C623A000288A388F00DC0209 /* Models */,
 				C6239FFF288A387F00DC0209 /* ViewModels */,
