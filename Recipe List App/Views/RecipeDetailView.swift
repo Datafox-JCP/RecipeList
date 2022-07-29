@@ -15,7 +15,7 @@ struct RecipeDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                    // MARK: Recipe Image
+                // MARK: Recipe Image
                 Image(recipe.image)
                     .resizable()
                     .scaledToFill()
@@ -27,7 +27,7 @@ struct RecipeDetailView: View {
                     .padding(.leading)
                     .font(.largeTitle)
                 
-                // MARK: Servind size Picker
+                // MARK: Serving size Picker
                 VStack(alignment: .leading) {
                     Text("Select your serving size:")
                     Picker("", selection: $selectedServingSize) {
@@ -56,7 +56,7 @@ struct RecipeDetailView: View {
                 
                 Divider()
                 
-                    // MARK: Directions
+                // MARK: Directions
                 VStack(alignment: .leading) {
                     Text("Directions")
                         .font(.headline)
@@ -70,7 +70,6 @@ struct RecipeDetailView: View {
                 .padding(.horizontal)
             }
         }
-        //.navigationBarTitle(recipe.name)
     }
 }
 
